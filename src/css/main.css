@@ -1,0 +1,119 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  height: 100vh;
+}
+
+body {
+  color: #fef;
+  background-color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bd__wrap {
+  margin: 2rem;
+}
+
+.hd .hd__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hd .hd__title .title {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.hd .hd__title .sub-title {
+  color: #fef;
+  font-size: 1.5rem;
+}
+
+.mn__wrap {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 20vw 20vw 20vw 20vw;
+      grid-template-columns: 20vw 20vw 20vw 20vw;
+}
+
+.link-wrap {
+  text-decoration: none;
+  color: #fff;
+  margin: .8rem;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 2px 2rem rgba(255, 255, 255, 0.185);
+          box-shadow: 0 2px 2rem rgba(255, 255, 255, 0.185);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.item:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+  -webkit-box-shadow: 0 2px 1rem rgba(255, 255, 255, 0.2);
+          box-shadow: 0 2px 1rem rgba(255, 255, 255, 0.2);
+}
+
+.item .item__img {
+  background-color: #fff;
+  border: none;
+}
+
+.item .item__img .img {
+  width: 100%;
+}
+
+.item .item__copy {
+  background-color: #fff;
+  text-align: center;
+  padding: .8rem 0;
+}
+
+.item .item__copy .title {
+  color: #333;
+  font-size: 2rem;
+  padding-bottom: .8rem;
+}
+
+.item .item__copy .sub-title {
+  color: #333;
+  opacity: .9;
+  padding: 0 1.5rem;
+  padding-bottom: .8rem;
+}
+
+@media screen and (max-width: 1068px) {
+  .mn__wrap {
+    -ms-grid-columns: 30vw 30vw 30vw;
+        grid-template-columns: 30vw 30vw 30vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mn__wrap {
+    -ms-grid-columns: 40vw 40vw;
+        grid-template-columns: 40vw 40vw;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .mn__wrap {
+    -ms-grid-columns: 80vw;
+        grid-template-columns: 80vw;
+  }
+}
