@@ -51,6 +51,11 @@ body {
   margin: .8rem;
 }
 
+.item {
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
 .item:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -86,7 +91,7 @@ body {
 
 .item .item__copy .title {
   color: #333;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: .8rem;
 }
 
