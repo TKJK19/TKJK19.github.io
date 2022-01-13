@@ -1,3 +1,3 @@
-# hudson19 toolkit
+# my portfolio
 
-husdon19 toolkit directory/repository
+styles be damned
